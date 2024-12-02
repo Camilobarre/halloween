@@ -1,0 +1,53 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('https://cadenaser.com/resizer/v2/OCLEXSAZV5EYVNC7B6JGISGPFI.jpg?auth=9b8fffcdeec407a25fde192d2db53e54ed48ba0472083dafdc47ec7f753b45a1&quality=70&width=1200&height=900&smart=true') no-repeat center center fixed;
+    /* Cambia esta URL por la imagen de calabazas */
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.7;
+    /* Opacidad de fondo */
+}
+
+/* Header */
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #f39c12;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Main content section */
+.content {
+    padding: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    color: #bbb;
+}
