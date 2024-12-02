@@ -20,6 +20,17 @@ body {
     background-attachment: fixed;
     opacity: 0.7;
     /* Opacidad de fondo */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 /* Header */
@@ -46,8 +57,51 @@ p {
 
 /* Footer */
 footer {
-    position: fixed;
-    bottom: 10px;
+    position: absolute;
+    bottom: 20px;
     width: 100%;
     color: #bbb;
+}
+
+/* Animación para los murciélagos */
+.bat {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://st2.depositphotos.com/9910802/42054/v/450/depositphotos_420545324-stock-illustration-vector-set-group-three-white.jpg');
+    /* Cambia esta URL por la imagen del murciélago */
+    background-size: cover;
+    animation: fly 10s linear infinite;
+}
+
+/* Animación de vuelo */
+@keyframes fly {
+    0% {
+        transform: translateX(-100px) translateY(0);
+    }
+
+    50% {
+        transform: translateX(100vw) translateY(200px);
+    }
+
+    100% {
+        transform: translateX(-100px) translateY(0);
+    }
+}
+
+/* Posicionamiento aleatorio para cada murciélago */
+#bat1 {
+    top: 20%;
+    animation-duration: 12s;
+}
+
+#bat2 {
+    top: 40%;
+    animation-duration: 15s;
+}
+
+#bat3 {
+    top: 60%;
+    animation-duration: 10s;
 }
